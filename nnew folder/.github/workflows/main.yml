@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Testing Github Action'
+      - name: 'Testing github action'
         run: pwd
 
 
