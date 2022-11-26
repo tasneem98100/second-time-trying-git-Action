@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: 'Testing github Action'
-        run: pwd
+        run: ls
 
 
       - name: 'Testing Printing'
