@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'testing Github Action'
+      - name: 'Testing Github Action'
         run: pwd
 
 
-      - name: 'testing Printing'
+      - name: 'Testing Printing'
         run: echo Tasneem
 
