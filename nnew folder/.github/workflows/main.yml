@@ -17,9 +17,14 @@ jobs:
       - uses: actions/checkout@v3
       
       -name: "Login to Docker hub"
-        run:docker login --username ${{ secrete.DOCKER6_USERNAME }} --password ${{ secrete.DOCKER_TOCKEN }}
+        run: docker login --username ${{ secrete.DOCKER6_USERNAME }} --password ${{ secrete.DOCKER_TOCKEN }}
 
+      -name: "Building Docker image"
+        run: docker build -t ${{ secrete.DOCKER6_USERNAME }}/myimage .
 
+      -name: "pushing dockerhub" 
+        run: docker push ${{ secrete.DOCKER6_USERNAME }}/myimage
+        
       - name: 'Testing Printing'
         run: echo Tasneem
 
