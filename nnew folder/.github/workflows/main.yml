@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+      - slave
+
+
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 'testing Github Action'
+        run: pwd
+
+
+      - name: 'testing Printing'
+        run: echo Tasneem
+
